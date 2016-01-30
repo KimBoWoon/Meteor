@@ -11,5 +11,9 @@ before_install:
 before_script:
     - "export PATH=$HOME/.meteor:$PATH"
 
+env:
+    - LAIKA_OPTIONS="-t 5000"
+
 script:
     - "spacejam test-packages ./"
+    
