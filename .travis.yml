@@ -12,5 +12,5 @@ before_script:
     - "export PATH=$HOME/.meteor:$PATH"
 
 script:
-    - "nosetests"
+    - nosetests
     # - "spacejam test-packages ./"
