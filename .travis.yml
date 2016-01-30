@@ -6,6 +6,6 @@ node_js:
 
 before_install:
     - "curl https://install.meteor.com | sh"
-
-script:
-    - "meteor"
+    
+before_script:
+    - "export PATH=$HOME/.meteor:$PATH"
