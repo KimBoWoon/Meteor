@@ -12,4 +12,4 @@ before_script:
     - "export PATH=$HOME/.meteor:$PATH"
 
 script:
-    - "spacejam test-packages ./meteor"
+    - "spacejam test-packages ./"
