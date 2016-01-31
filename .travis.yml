@@ -7,7 +7,7 @@ node_js:
 before_install:
     - "curl https://install.meteor.com | sh"
     - "curl -L https://raw.githubusercontent.com/arunoda/travis-ci-meteor-packages/master/configure.sh | /bin/sh"
-    - "npm install -g spacejam"
+    - "curl -L https://raw.githubusercontent.com/arunoda/travis-ci-laika/master/configure.sh | /bin/sh"
     
 before_script:
     - "export PATH=$HOME/.meteor:$PATH"
@@ -17,6 +17,3 @@ services:
 
 env:
     - 'LAIKA_OPTIONS="-t 5000"'
-
-script:
-    - "spacejam test-packages ./"
